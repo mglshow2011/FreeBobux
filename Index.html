@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>How to get free Bobux</title>
+	<link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Click for free Bobux!</h1>
+		<button type="button" id="button" onclick="RickRoll();">Free Bobux!</button>
+		<video id="resultVideo" src="RickRoll.mp4" style="display: none;"></video>
+	</div>
+
+	<script type="text/javascript">
+		function RickRoll() {
+			// Remove the button
+			var buttonElement = document.getElementById("button");
+			buttonElement.remove();
+
+			// Play the Rick Astley's "Never Gonna Give You Up" video
+			var videoElement = document.getElementById("resultVideo");
+			videoElement.style.display = "block";
+			videoElement.play();
+		}
+	</script>
+</body>
+</html>
